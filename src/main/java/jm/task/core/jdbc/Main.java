@@ -11,8 +11,8 @@ public class Main {
     public static void main(String[] args) throws SQLException {
         // реализуйте алгоритм здесь
 
-        Util util =new Util();
-        util.getConnection();
+
+        Util.getConnection();
         UserDaoJDBCImpl userDaoJDBC = new UserDaoJDBCImpl();
 
         userDaoJDBC.createUsersTable();
