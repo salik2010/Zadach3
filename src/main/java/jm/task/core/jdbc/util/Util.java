@@ -12,7 +12,7 @@ public class Util {
     private static final String DB_Login = "root";
     private static final String DB_Password = "root";
 
-    public Connection getConnection() {
+    public static Connection getConnection() {
         Connection connection = null;
         try {
             Class.forName(DB_Driver).newInstance();
